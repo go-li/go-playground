@@ -1,0 +1,33 @@
+{
+  "project": "gccbox",
+  "services": [
+    {
+      "id": "frontend",
+      "apps": [
+        {
+          "status": [
+            "running"
+          ],
+          "env": {
+            "MESSAGE": "sloppy!"
+          },
+          "domain": {
+            "uri": "$URI"
+          },
+          "mem": 512,
+          "image": "goli/go-playground-gccbox80",
+          "instances": 1,
+          "id": "gccbox",
+          "health_checks": [],
+          "volumes": [],
+          "port_mappings": [
+            {
+              "container_port": 80,
+              "protocol": "tcp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
