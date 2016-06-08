@@ -8,7 +8,7 @@ FROM go-playground-sandbox80
 RUN mkdir -p /opt
 
 # add gccgo from /opt
-RUN curl https://docs.google.com/uc?export=download&confirm=o-9b&id=0BwW7BsjjnpjFQVV3T09oMHd5UVU | tar -xz -C /opt
+ADD gccgo.tar.gz /opt
 
 # add and compile sandbox daemon
 COPY . /go/src/gccbox
