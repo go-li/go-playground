@@ -44,7 +44,7 @@ func main() {
 	}
 	http.HandleFunc("/compile", compileHandler)
 	http.HandleFunc("/_ah/health", healthHandler)
-	log.Fatal(http.ListenAndServe(":8079", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
 
 func compileHandler(w http.ResponseWriter, r *http.Request) {

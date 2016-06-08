@@ -1,9 +1,9 @@
 docker: Dockerfile
-	docker build -t mygobox1 .
+	docker build -t mygccbox80 .
 
 test: docker
 	go test
-	docker run --rm mygobox1 test
+	docker run --rm mygccbox80 test
 
 run:
-	docker run -d -p 8078:8079 -t mygobox1
+	docker run -d -p 80:80 -t mygccbox80
