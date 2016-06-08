@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-FROM go-playground-sandbox80
+FROM goli/go-playground-sandbox80
 
 # add dir for gccgo
 RUN mkdir -p /opt
