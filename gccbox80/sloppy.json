@@ -14,7 +14,7 @@
           "domain": {
             "uri": "$URI"
           },
-          "mem": 512,
+          "mem": 1024,
           "image": "goli/go-playground-gccbox80",
           "instances": 1,
           "id": "gccbox",
