@@ -52,6 +52,9 @@ func compileHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Allow", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "X-apikey")
+	if r.Method == "OPTIONS" {
+		return
+	}
 	var req Request
 	version := r.PostFormValue("version")
 	if version == "2" {
